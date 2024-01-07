@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "google.play.apps.info", "google.play.apps.info\google.play.apps.info.csproj", "{9A08E01A-474C-45B9-8208-13929D2F52BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet.google.play.apps.info", "dotnet.google.play.apps.info\dotnet.google.play.apps.info.csproj", "{785C0FD9-F2A3-4D62-9B9C-DA3230DEE8F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A08E01A-474C-45B9-8208-13929D2F52BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A08E01A-474C-45B9-8208-13929D2F52BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A08E01A-474C-45B9-8208-13929D2F52BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A08E01A-474C-45B9-8208-13929D2F52BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{785C0FD9-F2A3-4D62-9B9C-DA3230DEE8F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785C0FD9-F2A3-4D62-9B9C-DA3230DEE8F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785C0FD9-F2A3-4D62-9B9C-DA3230DEE8F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785C0FD9-F2A3-4D62-9B9C-DA3230DEE8F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAFB50AE-DC27-4194-BA79-461F932DBD85}
+	EndGlobalSection
+EndGlobal
