@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "google.play.apps.info", "google.play.apps.info\google.play.apps.info.csproj", "{9A08E01A-474C-45B9-8208-13929D2F52BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet.google.play.apps.info", "dotnet.google.play.apps.info\dotnet.google.play.apps.info.csproj", "{785C0FD9-F2A3-4D62-9B9C-DA3230DEE8F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "googleplayCrawler", "dotnet.google.play.apps.info\googleplayCrawler.csproj", "{785C0FD9-F2A3-4D62-9B9C-DA3230DEE8F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
