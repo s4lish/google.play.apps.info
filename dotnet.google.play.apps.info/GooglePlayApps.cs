@@ -28,6 +28,13 @@ namespace googleplayCrawler
                 handler.UseDefaultCredentials = true;
                 _comName = _url.Replace("https://play.google.com/store/apps/details?id=", string.Empty);
             }
+            else
+            {
+                _comName = URL;
+                _url += _comName;
+                handler = new HttpClientHandler();
+                handler.UseDefaultCredentials = true;
+            }
         }
 
 
@@ -48,6 +55,16 @@ namespace googleplayCrawler
                 appInfo.AgeBasedRating = crawler.GetAgeRating();
                 appInfo.AgeBasedRatingIcon = crawler.GetAgeRatingImage();
                 appInfo.Downloads = crawler.GetDownloadCount();
+                appInfo.Images = crawler.GetImages();
+
+                appInfo.UpdatedOn = crawler.GetUpdatedOn();
+
+                //appInfo.Version = crawler.GetAboutAppInfo(0);
+                //appInfo.UpdatedOn = crawler.GetAboutAppInfo(1);
+                //appInfo.RequiresAndroid = crawler.GetAboutAppInfo(2);
+                //appInfo.ExactDownloads = crawler.GetAboutAppInfo(3);
+                //appInfo.ReleasedOn = crawler.GetAboutAppInfo(7);
+
                 appInfo.COMName = _comName;
                 appInfo.URL = _url;
                 return appInfo;
