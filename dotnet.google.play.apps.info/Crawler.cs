@@ -1,4 +1,6 @@
 ﻿using HtmlAgilityPack;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace googleplayCrawler
 {
@@ -114,5 +116,53 @@ namespace googleplayCrawler
                 return "-";
             }
         }
+
+        public List<string> GetImages()
+        {
+            var minsizeImage = "w526-h296";
+            var maxSizeImage = "w2560-h1440";
+
+            var imagesElement = doc.DocumentNode.SelectNodes("//img[@alt='Screenshot image' and @class='T75of B5GQxf']");
+            if (imagesElement.Any())
+            {
+                List<string> images = new List<string>();
+
+                foreach (var image in imagesElement)
+                {
+                    images.Add(image.GetAttributeValue("src", "-").Replace(minsizeImage, maxSizeImage));
+                }
+                return images;
+            }
+            else
+            {
+                return new List<string>();
+            }
+        }
+
+        public string GetUpdatedOn()
+        {
+            var h1Element = doc.DocumentNode.SelectSingleNode("//div[@class='TKjAsc']/div/div[@class='xg1aie']");
+            if (h1Element != null)
+            {
+                return h1Element.InnerText;
+            }
+            else
+            {
+                return "-";
+            }
+        }
+
+        //public string GetAboutAppInfo(int Index)
+        //{
+        //    var h1Element = doc.DocumentNode.SelectNodes("//div[@class='G1zzid']/div[@class='sMUprd']/div[@class='reAt0']")[Index];
+        //    if (h1Element != null)
+        //    {
+        //        return h1Element.InnerText;
+        //    }
+        //    else
+        //    {
+        //        return "-";
+        //    }
+        //}
     }
 }
